@@ -1,0 +1,192 @@
+body {
+    background-color: #000; /* warna hitam */
+    /* atau pakai gambar */
+    background-image: url('../assets/trader.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.logo-wrapper {
+    display: flex;
+    justify-content: center; /* center horizontal */
+    margin-top: 20px;
+}
+
+.custom-logo {
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.custom-logo:hover {
+    transform: scale(1.05); /* efek zoom saat hover */
+}
+
+
+
+/* Hero Section */
+.hero {
+    background-image: url('../assets/trader.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Overlay hitam semi-transparan */
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10%;
+    position: relative;
+}
+
+/* Container konten */
+.container {
+    color: white;
+    max-width: 600px;
+}
+
+.container h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 20px;
+    animation: fadeInUp 1.2s ease-out;
+}
+
+.container .highlight {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    font-size: 3.5rem;
+    background: linear-gradient(90deg, #00ff88, #00c3ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.typewriter {
+    font-size: 1.2rem;
+    color: #ddd;
+    min-height: 30px;
+    position: relative;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.text-carousel::after {
+    content: "Platform analisis saham modern untuk investor dan trader profesional.";
+    animation: carousel 16s steps(40, end) infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #00ff88;
+    display: inline-block;
+    width: 0;
+}
+
+/* Carousel typing animation */
+@keyframes carousel {
+    0% {
+        content: "Platform analisis saham modern untuk investor dan trader profesional.";
+        width: 0;
+    }
+    10% {
+        width: 100%;
+    }
+    30% {
+        width: 100%;
+    }
+    35% {
+        width: 0;
+    }
+    36% {
+        content: "Make your analytical experience more precise at TradeCast";
+        width: 0;
+    }
+    46% {
+        width: 100%;
+    }
+    66% {
+        width: 100%;
+    }
+    70% {
+        width: 0;
+    }
+    71% {
+        content: "TradeCast: Your smart companion for market decisions.";
+        width: 0;
+    }
+    81% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+/* Tombol CTA */
+.btn {
+    background-color: #f3f5ff;
+    color: white;
+    padding: 14px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    animation: fadeInUp 1.8s ease-out;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #001aad;
+    text-decoration: none;
+}
+
+/* Subtagline */
+.sub-tagline {
+    display: block;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #aaa;
+    font-style: italic;
+    animation: fadeInUp 2s ease-out;
+}
+
+/* Floating icon */
+.floating-icon {
+    position: absolute;
+    top: 10%;
+    left: 85%;
+    width: 40px;
+    animation: float 5s ease-in-out infinite;
+    opacity: 0.5;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Fade in animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* Sembunyikan Streamlit bawaan */
+header, footer {
+    visibility: hidden;
+}
