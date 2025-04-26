@@ -25,7 +25,12 @@ st.markdown("""
 <div class="hero">
     <div class="overlay">
         <div class="container">
-            <h1><br>Trade Smarter, Invest Better Powered by <span class="highlight">TradeCast</span></h1>
+            <h1>
+<br>
+  <span class="green-text">Trade Smarter, Invest Better Powered by</span>
+  <span class="highlight"> TradeCast</span>
+</h1>
+
             <p class="typewriter">
               <span class="text-carousel"></span>
             </p>
