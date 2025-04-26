@@ -6,6 +6,29 @@ body {
     padding: 0;
 }
 
+/* Set full black background */
+body {
+    background-color: #000 !important;
+    margin: 0;
+    padding: 0;
+}
+
+/* Override main Streamlit container */
+section.main {
+    background-color: #000 !important;
+}
+
+/* Make sidebar black too */
+.css-1d391kg, .css-1lcbmhc {
+    background-color: #000 !important;
+}
+
+/* Optional: set default text color to white for contrast */
+html, body, .css-ffhzg2, .css-1v0mbdj {
+    color: #fff !important;
+}
+
+
 /* Container Utama */
 .hero {
     background-image: url('../assets/trader.jpg');
