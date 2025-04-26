@@ -17,6 +17,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 20px;
 }
 
 /* Overlay */
@@ -35,14 +36,14 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 40px;
+    gap: 30px; /* lebih rapat */
     color: white;
     max-width: 1000px;
 }
 
 /* Logo */
 .custom-logo {
-    width: 300px;
+    width: 250px; /* lebih kecil sedikit */
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     transition: transform 0.3s ease;
@@ -56,6 +57,7 @@ body {
 .container {
     color: white;
     max-width: 600px;
+    padding-top: 10px; /* sedikit naik */
 }
 
 .container h1 {
@@ -66,6 +68,12 @@ body {
     animation: fadeInUp 1.2s ease-out;
 }
 
+/* Ini yang membuat warna hijau di sebagian teks */
+.container .green-text {
+    color: #00ff88;
+}
+
+/* Highlight untuk TRADECAST */
 .container .highlight {
     font-family: 'Orbitron', sans-serif;
     font-weight: 600;
@@ -173,7 +181,14 @@ body {
         width: 180px;
     }
 
-    .container h1,
+    .container {
+        padding-top: 0;
+    }
+
+    .container h1 {
+        font-size: 2rem;
+    }
+
     .container .highlight {
         font-size: 2rem;
     }
@@ -196,3 +211,4 @@ body {
 header, footer {
     visibility: hidden;
 }
+
