@@ -17,7 +17,7 @@ load_css()
 
 col1, col2, col3 = st.columns([1,2,1])
 with col2:
-    st.image("Bull_tradecast.png", width=350)
+    st.image("assets/bull_tradecast.png", width=300)
 
 
 # Background overlay & konten utama
@@ -25,12 +25,7 @@ st.markdown("""
 <div class="hero">
     <div class="overlay">
         <div class="container">
-            <h1>
-<br>
-  <span class="green-text">Trade Smarter, Invest Better Powered by</span>
-  <span class="highlight"> TradeCast</span>
-</h1>
-
+            <h1><br>Trade Smarter, Invest Better Powered by <span class="highlight">TradeCast</span></h1>
             <p class="typewriter">
               <span class="text-carousel"></span>
             </p>
@@ -39,5 +34,7 @@ st.markdown("""
     </div>
 </div>
 """, unsafe_allow_html=True)
+
+
 
 
