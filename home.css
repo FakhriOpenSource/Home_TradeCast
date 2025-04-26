@@ -190,3 +190,74 @@ body {
 header, footer {
     visibility: hidden;
 }
+
+/* Responsive design */
+@media (max-width: 1200px) {
+    .container h1, .container .highlight {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        padding-right: 10%;
+    }
+
+    .container h1, .container .highlight {
+        font-size: 2.5rem;
+    }
+
+    .floating-icon {
+        left: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .overlay {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    .container h1, .container .highlight {
+        font-size: 2rem;
+    }
+
+    .typewriter {
+        font-size: 1rem;
+    }
+
+    .floating-icon {
+        display: none; /* disembunyikan untuk layar kecil */
+    }
+
+    .custom-logo {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container h1, .container .highlight {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .sub-tagline {
+        font-size: 0.8rem;
+    }
+}
+
