@@ -94,7 +94,7 @@ body {
 }
 
 .text-carousel::after {
-    content: "Platform analisis saham modern untuk investor dan trader profesional.";
+    content: "Welcome professional investors and traders.";
     animation: carousel 16s steps(40, end) infinite;
     white-space: nowrap;
     overflow: hidden;
