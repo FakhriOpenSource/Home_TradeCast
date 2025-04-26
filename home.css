@@ -104,7 +104,7 @@ body {
 }
 
 @keyframes carousel {
-    0% { content: "Platform analisis saham modern untuk investor dan trader profesional."; width: 0; }
+    0% { content: "Modern stock analysis platform for professional investors and traders."; width: 0; }
     10% { width: 100%; }
     30% { width: 100%; }
     35% { width: 0; }
@@ -112,7 +112,7 @@ body {
     46% { width: 100%; }
     66% { width: 100%; }
     70% { width: 0; }
-    71% { content: "TradeCast: Your smart companion for market decisions."; width: 0; }
+    71% { content: "TradeCast smart app for more accurate market decisions."; width: 0; }
     81% { width: 100%; }
     100% { width: 0; }
 }
