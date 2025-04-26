@@ -5,17 +5,43 @@ body {
     background-position: center;
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
 }
 
-.logo-wrapper {
+/* Container Utama */
+.hero {
+    background-image: url('../assets/trader.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Overlay */
+.overlay {
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    text-align: center;
+    padding: 20px;
+    position: relative;
 }
 
+/* Gabungan logo dan teks */
+.hero-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    color: white;
+    max-width: 1000px;
+}
+
+/* Logo */
 .custom-logo {
     width: 300px;
     border-radius: 20px;
@@ -27,36 +53,10 @@ body {
     transform: scale(1.05);
 }
 
-/* Hero Section */
-.hero {
-    background-image: url('../assets/trader.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Overlay */
-.overlay {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px;
-    text-align: center;
-    flex-direction: column;
-}
-
-/* Container konten */
+/* Konten teks */
 .container {
     color: white;
     max-width: 600px;
-    text-align: center;
 }
 
 .container h1 {
@@ -82,6 +82,7 @@ body {
     font-size: 1.2rem;
     color: #ddd;
     min-height: 30px;
+    position: relative;
     animation: fadeInUp 1.5s ease-out;
 }
 
@@ -95,7 +96,6 @@ body {
     width: 0;
 }
 
-/* Carousel typing animation */
 @keyframes carousel {
     0% { content: "Platform analisis saham modern untuk investor dan trader profesional."; width: 0; }
     10% { width: 100%; }
@@ -110,7 +110,6 @@ body {
     100% { width: 0; }
 }
 
-/* Tombol CTA */
 .btn {
     background-color: #f3f5ff;
     color: white;
@@ -128,7 +127,6 @@ body {
     text-decoration: none;
 }
 
-/* Subtagline */
 .sub-tagline {
     display: block;
     margin-top: 15px;
@@ -138,7 +136,6 @@ body {
     animation: fadeInUp 2s ease-out;
 }
 
-/* Floating icon */
 .floating-icon {
     position: absolute;
     top: 10%;
@@ -154,7 +151,6 @@ body {
     100% { transform: translateY(0px); }
 }
 
-/* Fade in animation */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -166,46 +162,20 @@ body {
     }
 }
 
-/* Sembunyikan Streamlit bawaan */
-header, footer {
-    visibility: hidden;
-}
-
-/* Responsive design */
-@media (max-width: 1200px) {
-    .container h1, .container .highlight {
-        font-size: 2.8rem;
-    }
-}
-
-@media (max-width: 992px) {
-    .container h1, .container .highlight {
-        font-size: 2.5rem;
-    }
-
-    .floating-icon {
-        left: 80%;
-    }
-}
-
+/* Responsif Mobile */
 @media (max-width: 768px) {
-    .hero {
-        height: auto;
-        padding: 60px 20px;
-        text-align: center;
-    }
-
-    .overlay {
+    .hero-content {
         flex-direction: column;
-        align-items: center;
-        padding-left: 0;
+        text-align: center;
+        gap: 20px;
     }
 
-    .container {
-        max-width: 100%;
+    .custom-logo {
+        width: 180px;
     }
 
-    .container h1, .container .highlight {
+    .container h1,
+    .container .highlight {
         font-size: 2rem;
     }
 
@@ -213,27 +183,17 @@ header, footer {
         font-size: 1rem;
     }
 
-    .floating-icon {
-        display: none;
-    }
-
-    .custom-logo {
-        width: 200px;
-    }
-}
-
-@media (max-width: 480px) {
-    .container h1, .container .highlight {
-        font-size: 1.5rem;
-    }
-
     .btn {
         padding: 10px 20px;
         font-size: 0.9rem;
     }
 
-    .sub-tagline {
-        font-size: 0.8rem;
+    .floating-icon {
+        display: none;
     }
 }
 
+/* Sembunyikan Streamlit bawaan */
+header, footer {
+    visibility: hidden;
+}
