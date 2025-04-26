@@ -17,7 +17,7 @@ load_css()
 
 col1, col2, col3 = st.columns([1,2,1])
 with col2:
-    st.image("Cat_tradecast1.png", width=550)
+    st.image("Bull_tradecast.png", width=550)
 
 
 # Background overlay & konten utama
