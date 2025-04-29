@@ -29,7 +29,7 @@ st.markdown("""
             <p class="typewriter">
               <span class="text-carousel"></span>
             </p>
-            <a href="https://tradecast10-h99krzyzqbtgdtn8efx4pi.streamlit.app/" class="btn">Get started</a>
+            <a href="https://tradecast-1.streamlit.app/" class="btn">Get started</a>
         </div>
     </div>
 </div>
